@@ -14,6 +14,11 @@ pipeline
       }
     }
     stage("Deploy"){
+      when{
+        expression{
+          BRANCH_NAME == "main"
+        }
+      }
       steps{
         echo "Deploying"
       }
