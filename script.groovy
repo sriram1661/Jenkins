@@ -12,3 +12,5 @@ def deploy()
 {
     echo "Deploying version ${VERSION}"
 }
+
+return this
